@@ -7,3 +7,5 @@ fi
 npm start
 
 echo "✅ All tests done, full trace written to trace.json"
+
+./check_leaked_env.sh
