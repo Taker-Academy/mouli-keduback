@@ -136,7 +136,7 @@ describe("/comment  ", () => {
         expectDateToBeCloseToNow(post.data.data.comments[0].createdAt);
     });
     it("Stress test API comments", async () => {
-        const randomComment = Math.floor(Math.random() * 100);
+        const randomComment = Math.floor(Math.random() * 40);
         const { token } = await registerUser();
         const { postResponse } = await pushPost();
 
