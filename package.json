@@ -17,8 +17,7 @@
     "ts-jest": "^29.1.2"
   },
   "scripts": {
-    "start": "npm run getIp && jest --json --outputFile=trace.json ",
-    "getIp": "sh ip.sh"
+    "start": "jest --json --outputFile=trace.json "
   },
   "jest": {
     "preset": "ts-jest",

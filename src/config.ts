@@ -1,18 +1,10 @@
 import dotenv from "dotenv";
 import axios from "axios";
-import fs from "fs";
 dotenv.config();
 
-const dockerIp = fs.readFileSync("./docker-ip.txt", "utf-8").trim().split("\n")[0];
 const PORT = process.env.PORT || 8080;
 
-if (dockerIp && !process.env.API_URL) {
-    process.env.API_URL = `http://${dockerIp}:${PORT}`;
-} else {
-    console.log(`⚠️ No Docker IP found, using localhost:${PORT}`);
-}
-
-const API_URL = process.env.API_URL || "http://localhost:" + PORT;
+const API_URL = "http://localhost:" + PORT;
 
 export const API = axios.create({
     baseURL: API_URL,
