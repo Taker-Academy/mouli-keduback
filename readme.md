@@ -21,10 +21,13 @@ Using Kedubak Mouli is incredibly simple. Just execute the following command:
 
 ## Parameters
 
-In case you can't set the backend `PORT` to `8080`, you can pass the port as ENV variable by modifying the `.env` file.
+PORT: The port on which the backend is running. Default is `8080`
+REPO_PATH: The path to the repository to be tested. necessary to check the git history for leaked `.env`. 
+> Just go to the clone repository and run pwd, copy past that result in env
 
 ```bash
 PORT=8081
+
 ```
 
 ## Files & Folders

@@ -29,7 +29,7 @@ sleep 2
 if [ -n "$result" ]; then
     echo -e "${RED}💥 💔 😱 LEAKED since $result ${NC} "
 else
-    echo -e "${GREEN}🌟 ✨ 🥳 OK${NC}"
+    echo -e "${GREEN}🌟 ✨ 🥳 OK, No leak${NC}"
 fi
 
 cd -
